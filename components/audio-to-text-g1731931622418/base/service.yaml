@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: audio-to-text-g1731931622418
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: audio-to-text-g1731931622418 
+  name: audio-to-text-g1731931622418
+spec:
+  ports:
+  - port: 8501
+    protocol: TCP
+    targetPort: 8501
+  selector:
+    app.kubernetes.io/instance: audio-to-text-g1731931622418 
